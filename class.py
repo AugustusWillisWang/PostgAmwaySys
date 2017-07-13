@@ -39,8 +39,21 @@ class TABLE(object):
         else:
             print "name should be str"
 
-    value = []
-    num = 1
+    value = 1
+    numlist = []
+
+    @property
+    def getvalue(self):
+        '''no note'''
+        print'get value in %s : get %s' % (__name__, self.value)
+        return self.value
+
+    @getvalue.setter
+    def getvalue(self, value):
+        '''
+        fuck
+        '''
+        self.value = value
 
 
 class Listplus(object):
@@ -87,4 +100,62 @@ TABLE.show()
 print dir(TABLE)
 print getattr(TABLE, "__doc__", "1")
 # TABLE.__doc__()
-print TABLE.num
+print TABLE.numlist
+# TABLE.value
+# TABLE.value=2
+print TABLE.value
+print TABLE.getvalue
+
+
+class New(object):
+    '''6.26'''
+
+    def __init__(self):
+        self.name = 1
+
+    def __str__(self):
+        return 'poi'
+
+    __repr__ = __str__
+
+
+class Fib(object):
+    '''gen and more with fib'''
+
+    def __init__(self):
+        self.a = 0
+        self.b = 1
+
+    def __iter__(self):
+        return self
+
+    def next(self):
+        self.a, self.b = self.b, self.a + self.b
+        if self.a > 1000000:
+            raise StopIteration()
+        return self.a
+    def __call__(self):
+        print 'call fib directly'
+
+    def __getitem__(self,inp):
+        i=1
+        aa=0
+        bb=1
+        while(i<inp):
+            aa,bb=bb,aa+bb
+            i=i+1
+        return aa
+        
+    # def __getattribute__(self,n):
+    #     if n=="poi":
+    #         return "poi?"
+    #         raise StandardError
+    #     else:
+    #         print "please input poi"
+
+x=Fib()
+for i in x:
+    print i 
+
+print x[5]
+x()
