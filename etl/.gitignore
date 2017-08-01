@@ -1,0 +1,4 @@
+#ignore data
+*.xls
+*.xlsx
+*.csv
