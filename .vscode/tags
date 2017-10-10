@@ -1,0 +1,71 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Fib	../python learning guide\class.py	/^class Fib(object):$/;"	kind:class	line:122
+Listplus	../python learning guide\class.py	/^class Listplus(object):$/;"	kind:class	line:59
+New	../python learning guide\class.py	/^class New(object):$/;"	kind:class	line:110
+TABLE	../python learning guide\class.py	/^TABLE = TABLE('a', 'b',)$/;"	kind:variable	line:96
+TABLE	../python learning guide\class.py	/^class TABLE(object):$/;"	kind:class	line:14
+__call__	../python learning guide\class.py	/^    def __call__(self):$/;"	kind:member	line:137
+__doc__	../python learning guide\class.py	/^    def __doc__(self):$/;"	kind:member	line:19
+__getitem__	../python learning guide\class.py	/^    def __getitem__(self,inp):$/;"	kind:member	line:140
+__init__	../python learning guide\class.py	/^    def __init__(self):$/;"	kind:member	line:113
+__init__	../python learning guide\class.py	/^    def __init__(self):$/;"	kind:member	line:125
+__init__	../python learning guide\class.py	/^    def __init__(self, *args, **kw):$/;"	kind:member	line:64
+__init__	../python learning guide\class.py	/^    def __init__(self, name, key="nokey", calc=2):$/;"	kind:member	line:22
+__iter__	../python learning guide\class.py	/^    def __iter__(self):$/;"	kind:member	line:129
+__repr__	../python learning guide\class.py	/^    __repr__ = __str__$/;"	kind:variable	line:119
+__slots__	../python learning guide\class.py	/^    __slots__ = ('addon', 'value', 'remark')$/;"	kind:variable	line:92
+__str__	../python learning guide\class.py	/^    def __str__(self):$/;"	kind:member	line:116
+addcol	../etl\alpha.py	/^def addcol(array,colname='',function=(lambda x:'')):$/;"	kind:function	line:115
+addcol	../etl\alpha27.py	/^def addcol(array,colname='',function=(lambda x:'')):$/;"	kind:function	line:91
+alpha.py	../etl\alpha.py	1;"	kind:file	line:1
+alpha27.py	../etl\alpha27.py	1;"	kind:file	line:1
+arrayfindcol	../etl\alpha.py	/^def arrayfindcol(array,keyword,search_in_which_row=0,search_mul_cols=0):$/;"	kind:function	line:85
+arrayfindcol	../etl\alpha27.py	/^def arrayfindcol(array,keyword,search_in_which_row=0,search_mul_cols=0):$/;"	kind:function	line:60
+attrlist	../etl\alpha.py	/^    attrlist=["批次","姓名"]$/;"	kind:variable	line:258
+changename	../python learning guide\class.py	/^    def changename(self, name):$/;"	kind:member	line:33
+class.py	../python learning guide\class.py	1;"	kind:file	line:1
+combine	../etl\alpha.py	/^def combine(array1,key1,array2,key2):$/;"	kind:function	line:216
+csv	../etl\alpha.py	/^import csv$/;"	kind:namespace	line:13
+date	../etl\alpha.py	/^from datetime import date,datetime$/;"	kind:namespace	line:15
+date	../etl\alpha27.py	/^from datetime import date,datetime$/;"	kind:namespace	line:12
+datetime	../etl\alpha.py	/^from datetime import date,datetime$/;"	kind:namespace	line:15
+datetime	../etl\alpha27.py	/^from datetime import date,datetime$/;"	kind:namespace	line:12
+delcol	../etl\alpha.py	/^def delcol(array,colnumber):$/;"	kind:function	line:134
+division	../python learning guide\class.py	/^from __future__ import division$/;"	kind:namespace	line:7
+egfunc	../etl\alpha.py	/^def egfunc(kw):$/;"	kind:function	line:131
+getvalue	../python learning guide\class.py	/^    def getvalue(self):$/;"	kind:member	line:46
+getvalue	../python learning guide\class.py	/^    def getvalue(self, value):$/;"	kind:member	line:52
+man	../etl\alpha.py	/^def man():$/;"	kind:function	line:19
+next	../python learning guide\class.py	/^    def next(self):$/;"	kind:member	line:132
+numlist	../python learning guide\class.py	/^    numlist = []$/;"	kind:variable	line:43
+opensheet	../etl\alpha.py	/^def opensheet(workbook,numofsheet=0):$/;"	kind:function	line:56
+opensheet	../etl\alpha27.py	/^def opensheet(workbook,numofsheet=0):$/;"	kind:function	line:34
+openworkbook	../etl\alpha.py	/^def openworkbook(_filename=0):$/;"	kind:function	line:38
+openworkbook	../etl\alpha27.py	/^def openworkbook(_filename=0):$/;"	kind:function	line:14
+os	../etl\alpha.py	/^import os$/;"	kind:namespace	line:12
+pickattr	../etl\alpha.py	/^def pickattr(array,attrlist):$/;"	kind:function	line:175
+readcsv	../etl\alpha.py	/^def readcsv(filename):$/;"	kind:function	line:163
+seg	../etl\alpha.py	/^def seg(input):$/;"	kind:function	line:193
+segcount	../etl\alpha.py	/^segcount=0$/;"	kind:variable	line:17
+setremark	../python learning guide\class.py	/^    def setremark(self, remarkname, *args, **kw):$/;"	kind:member	line:71
+sheettoarray	../etl\alpha.py	/^def sheettoarray(sheet):$/;"	kind:function	line:69
+sheettoarray	../etl\alpha27.py	/^def sheettoarray(sheet):$/;"	kind:function	line:47
+show	../python learning guide\class.py	/^    def show(self):$/;"	kind:member	line:27
+show	../python learning guide\class.py	/^    def show(self):$/;"	kind:member	line:81
+showrow	../etl\alpha.py	/^def showrow(array,rownumber):$/;"	kind:function	line:141
+table1	../etl\alpha.py	/^    table1=sheettoarray(opensheet(openworkbook()))$/;"	kind:variable	line:249
+table1	../etl\alpha27.py	/^    table1=sheettoarray(opensheet(openworkbook()))$/;"	kind:variable	line:107
+table2	../etl\alpha.py	/^    table2=read("output.csv")$/;"	kind:variable	line:257
+urllib	../etl\alpha.py	/^import urllib$/;"	kind:namespace	line:14
+value	../python learning guide\class.py	/^    value = 1$/;"	kind:variable	line:42
+writecsv	../etl\alpha.py	/^def writecsv(filename,array):$/;"	kind:function	line:153
+x	../python learning guide\class.py	/^x=Fib()$/;"	kind:variable	line:156
+xlrd	../etl\alpha.py	/^import xlrd$/;"	kind:namespace	line:10
+xlrd	../etl\alpha27.py	/^import xlrd$/;"	kind:namespace	line:10
+xlwt	../etl\alpha.py	/^import xlwt$/;"	kind:namespace	line:11
+xlwt	../etl\alpha27.py	/^import xlwt$/;"	kind:namespace	line:11
