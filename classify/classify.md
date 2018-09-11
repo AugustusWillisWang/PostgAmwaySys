@@ -2,11 +2,15 @@
 
 数据:802_ENGLISH_XLS1.csv
 
+---
+
 ## Preprocess
 
 先不考虑TID,SID
 
 credit 数据存在问题
+
+---
 
 ## clusterer first
 
@@ -18,11 +22,15 @@ credit 数据存在问题
 1. sage_out
 1. delay_year
 
+---
+
 所以,最明显的结果就是,毕业延迟与博硕,招生方式,入学时间有极大关联......
 
 对于employment_unit_class影响不大......
 
 credit 数据存在问题
+
+---
 
 ## 手工分析 (使用trees.UserClassifier)
 
@@ -33,6 +41,8 @@ employment_unit_class与以下属性存在强相关(不存在的)
 ![CPP&employment](uc1.bmp)
 
 ![TYPE&employment](uc2.bmp)
+
+---
 
 ## 选择属性 (或使用AttributeSelectedClassifier)
 
@@ -49,6 +59,7 @@ Selected attributes: 1,2,3,12,20,21,33,34 : 8
                      DALEY_YEAR
                      DELAY
 ```
+---
 
 ## 使用CVParameterSelection调整参数
 
@@ -60,11 +71,15 @@ Weka的分类算法按照其功能分为如下七种：bayes(贝叶斯) function
 
 袁梅宇. 数据挖掘与机器学习:WEKA应用技术与实践 (Kindle 位置 8395-8396). 清华大学出版社. Kindle 版本. 
 
+---
+
 ## 不同分类算法的比较(meta,misc算法除外)
 
 用experimenter功能实现以提高效率
 
 全部采用默认参数
+
+---
 
 |分类算法|ned-ned|ed-ned|ned-ed|ed-ed|edTP|nedTP|注记|
 |-|-|-|-|-|-|-|-|
@@ -93,6 +108,8 @@ Weka的分类算法按照其功能分为如下七种：bayes(贝叶斯) function
 
 meta算法中用贝叶斯和J48,决策树桩考虑
 
+---
+
 ## 元分类算法分析
 
 使用AttributeSelectedClassifier可能提高效果(先进行相关属性选择)
@@ -104,6 +121,8 @@ AdaboostM1(标称数据),AddictiveRegression:用一种方法迭代提高准确�
 Bagging(降方差)
 
 MultiScheme:从多种方法中选择
+
+---
 
 ## 表现(相对)良好的几种算法
 
@@ -198,6 +217,8 @@ Weighted Avg.    0.752    0.421    0.750      0.752    0.751      0.334    0.672
 
 *但是......贝叶斯的结果真的要多简洁有多简洁/滑稽*
 
+---
+
 ### weka.classifiers.trees.J48 -C 0.25 -M 2
 
 > 这是此分类器默认的参数设置， 对于J48分类器，很少需要为获得良好的性能而更改这些参数。
@@ -244,6 +265,8 @@ Weighted Avg.    0.865    0.340    0.864      0.865    0.855      0.616    0.819
   89 112 |   b = EDUCATION_RESEARCH
 
 ```
+
+---
 
 ### weka.classifiers.trees.DecisionStump
 
@@ -310,6 +333,9 @@ Weighted Avg.    0.742    0.510    0.722      0.742    0.729      0.256    0.639
  128  73 |   b = EDUCATION_RESEARCH
 
 ```
+
+---
+
 ### meta大杂烩 
 
 ```
@@ -347,6 +373,8 @@ Weighted Avg.    0.758    0.442    0.749      0.758    0.753      0.331    0.668
 ```
 
 但是,主要的影响因素还是Doctor/not
+
+---
 
 ## Tree的进一步讨论
 
